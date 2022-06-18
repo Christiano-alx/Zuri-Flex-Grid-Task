@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, .75);
+    --gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e'
+    ;
+    margin: 5rem auto;
+    width: 75%;
+}
+
+.main div {
+    text-align: center;
+    padding: 3em ;
+    margin: .2em;
+}
+
+.item-1 {
+    background: orangered;
+    grid-area: a;
+}
+
+.item-2 {
+    background: orange;
+    grid-area: b;
+}
+
+.item-3 {
+    background: green;
+    grid-area: c;
+}
+
+.item-4 {
+    background: rgb(32, 61, 178);
+    grid-area: d;
+    
+}
+
+.item-5 {
+    background: rgb(32, 61, 178);
+    grid-area: e;
+}
+
+
+/* CSS STYLES FOR THE FLEX BOX TASK */
+header nav {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+header nav a {
+    color: var(--orange);
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.main-flex {
+    margin: 5rem auto;
+    width: 75%;
+    display: flex;
+}
+
+.main-flex section {
+    padding: 2rem;
+}
+
+.main-flex .sedan {
+    background: var(--orange);
+}
+
+.main-flex .suv {
+    background: var(--cyan);
+}
+
+.main-flex .luxury {
+    background: var(--dark-cyan);
+}
+
+.main-flex section h1 {
+    color: #fff;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.main-flex section p {
+    color: var(--white);
+    margin-bottom: 4rem;
+}
+
+.main-flex section button {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
+
+.main-flex section button:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.main-flex .sedan button a:hover {
+    color: #fff;
+}
+
+.main-flex .sedan a button {
+    color: var(--orange);
+}
+
+.main-flex .sedan button:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+.main-flex .suv a button {
+    color: var(--cyan);
+}
+
+.main-flex .suv button:hover {
+    background: var(--cyan);
+    color: #fff;
+}
+
+.main-flex .luxury a button {
+    color: var(--dark-cyan);
+}
+
+.main-flex .luxury button:hover {
+    background: var(--dark-cyan);
+    color: #fff;
+}
