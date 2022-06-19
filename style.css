@@ -34,7 +34,7 @@ body {
 
 .main div {
     text-align: center;
-    padding: 3em ;
+    padding: 5rem ;
     margin: .2em;
 }
 
@@ -46,6 +46,7 @@ body {
 .item-2 {
     background: orange;
     grid-area: b;
+    height: 5rem;
 }
 
 .item-3 {
